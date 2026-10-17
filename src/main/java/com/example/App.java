@@ -1,13 +1,14 @@
 package com.example;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+/** Application entry point. */
+public final class App {
+    private App() {
+    }
+
+    public static void main(String[] args) {
+        int exitCode = ReplicatedChat.run(args, System.in, System.out, System.err);
+        if (exitCode != 0) {
+            System.exit(exitCode);
+        }
     }
 }
