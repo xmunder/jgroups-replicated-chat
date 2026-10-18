@@ -211,4 +211,5 @@ src/test/java/com/example/
   ReplicatedKeyValueStoreTest.java
   JGroupsClusterIntegrationTest.java
 docs/evidencia/ejecucion.md
+docs/evidencia/evidence.log
 ```
